@@ -1,0 +1,76 @@
+:root {
+    --main-dark: #004E89;
+    --main-light: #EFEFD0;
+    --user-title: #FF6B35;
+  }
+
+
+
+body{
+    background-color: var(--main-dark);
+}
+
+/* All buttons */ 
+.btn, .btn:focus {
+    border-color: var(--user-title);
+    color: var(--main-light);
+    background-color: var(--user-title);
+}
+
+.btn:hover{
+    border-color: var(--main-dark);
+    background-color: var(--main-light);
+    color: var(--main-dark);
+}
+
+.container{
+    color: var(--main-light);
+}
+
+.navbar{
+    height: 80px;
+}
+
+.main-row{
+    background-color: #1A659E;
+    height: calc(100% - 80px);
+}
+
+.users-title, .chat-title{
+    height: 40px;
+}
+
+.user-list-container, .chat-area-container{
+    height: calc(100% - 80px);
+}
+.user-list, .chat-area{
+    color: #004E89;
+    background-color: rgba(239, 239, 208, .1);
+    height: 100%;
+    overflow-y: auto;
+}
+
+.enter-chat{
+    height: 40px;
+}
+
+.users-container, .chat-container{
+    border-left: 1px solid #004E89;
+    height: 100%;
+}
+
+.card{
+    background-color: transparent !important;
+    border: none !important;
+}
+
+.card-body{
+    background-color: var(--main-light);
+    border: 1px solid var(--main-dark);
+    border-radius: 5px;
+    max-width: 75%;
+}
+
+.card-title{
+    color: var(--user-title);
+}
